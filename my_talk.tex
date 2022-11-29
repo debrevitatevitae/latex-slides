@@ -3,8 +3,12 @@
 \usepackage{tikz}
 \usepackage{fancybox}
 \usepackage{graphicx}
-\usepackage{color}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage[backend=bibtex,firstinits=true,maxnames=2,style=numeric-comp,sorting=none]{biblatex}
 
+\addbibresource{references.bib}
 
 
 \newcounter{saveenumi}
@@ -48,36 +52,27 @@ Delft, The Netherlands
 
 
 \begin{frame}
- \frametitle{First slide}
-Here comes my talk...
+  \frametitle{First slide}
 
-  \begin{block}{Titel \hfill \footnotesize{[Ref., 2005]}}
-Consider
-\[
-    A x = b
-\]
-\end{block}
+  Example reference \cite{article-minimal}
 
-\footnotesize{
- \begin{alertblock}{\footnotesize{Reference}}
- A. Firstauthor, B. Secondauthor, C. Thirdauthor. \emph{One way to highlight a reference.} Tech. report XX-YY-ZZ TU Delft (20XX)
-\end{alertblock}}
 \end{frame}
 
 \begin{frame}
  \begin{center}
   Thanks!
+
+  Questions?
  \end{center}
 
 \end{frame}
 
 
-\begin{frame}
- \frametitle{\textbf{Further reading}}
- \footnotesize{
-\begin{thebibliography}{9}
- \bibitem{BG14} M. Name and M. Supervisor. \emph{Our amazing paper.} SIAM J. Sci. Comput., \textbf{37}(5), S90-S112 (2015).
-\end{thebibliography}}
+\begin{frame}[allowframebreaks,noframenumbering]
+  \frametitle{References}
+  \footnotesize{
+   \printbibliography
+ }
 \end{frame}
 
 \end{document}
